@@ -3,7 +3,7 @@
 A Flask web application deployed and managed as a 24/7 background service via Gunicorn and `systemd` on an Ubuntu Azure Virtual Machine.
 
 <p align="center">
-  <img src="qrcode.png" alt="pmanual_elect QR Code" width="200" />
+    ![QR Code](static/qrcode.png)
 </p>
 
 <p align="center">
