@@ -1,25 +1,13 @@
 # pmanual_elect
 
-A Flask web application deployed and managed as a 24/7 background service via Gunicorn and `systemd` on an Ubuntu Azure Virtual Machine.
+A Flask web application deployed and managed as a 24/7.
 
-<p align="center">
-    ![QR Code](static/qrcode.png)
-</p>
+![QR Code](static/qrcode.png)
 
 <p align="center">
   <strong>Live Deployment:</strong> <a href="http://85.211.241.159:8001">http://85.211.241.159:8001</a>
 </p>
 
----
-
-## Tech Stack
-
-* **Backend:** Python 3, Flask
-* **WSGI Server:** Gunicorn
-* **Process Manager:** `systemd` (`pmanual_elect.service`)
-* **Infrastructure:** Ubuntu Linux (Azure VM)
-
----
 
 ## Project Structure
 
