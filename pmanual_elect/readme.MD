@@ -2,7 +2,7 @@
 
 A Flask web application deployed and managed as a 24/7.
 
-![QR Code](qrcode.png)
+![QR Code](static/qrcode.png)
 
 <p align="center">
   <strong>Live Deployment:</strong> <a href="http://85.211.241.159:8001">http://85.211.241.159:8001</a>
