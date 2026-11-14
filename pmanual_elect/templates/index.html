@@ -1,0 +1,1237 @@
+<html lang="en" style="height: auto;"><head>
+    <meta charset="utf-8">
+    <meta content="noindex, nofollow" name="robots">
+    <meta content="PUP Digital Campus Services Manual" name="Description">
+    <meta content="PUP Portal" name="abstract">
+    <meta content="PUP" name="author">
+    <meta content="Polytechnic University of the Philippines" name="copyright">
+    <meta content="Higher Education" name="category">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>pmanual - SINTA Digital Campus Services Manual</title>
+    <link href="https://cdn.pup.edu.ph/img/ico/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Official PUP SIS AdminLTE and Custom Stylesheets -->
+    <link href="https://sis1.pup.edu.ph/student/assets/admin/dist/css/adminlte.min.css" rel="stylesheet">
+    <link href="https://cdn.pup.edu.ph/css/si.css" rel="stylesheet">
+    <link href="https://sis1.pup.edu.ph/student/assets/admin/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        .pup-header-bg {
+            background-color: #800000;
+            border-bottom: 3px solid #ffc107;
+        }
+        .step-badge {
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #800000;
+            color: #ffc107;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .quick-btn {
+            transition: all 0.2s ease-in-out;
+        }
+        .quick-btn:hover {
+            transform: translateY(-2px);
+            border-color: #800000 !important;
+            background-color: #fff9f9 !important;
+        }
+    </style>
+</head>
+
+<body class="layout-top-nav bg-light" style="height: auto;">
+
+    <div class="wrapper">
+
+        <!-- Navbar (PUP Maroon Theme) -->
+        <nav class="main-header navbar navbar-expand-md navbar-dark pup-header-bg py-3">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img src="https://cdn.pup.edu.ph/img/symbols/logo88x88.png" alt="PUP Logo" class="brand-image img-circle elevation-1 mr-2" style="opacity: .9; width: 36px; height: 36px;">
+                    <span class="brand-text font-weight-bold text-white">SINTA DIGITAL MANUAL</span>
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <span class="nav-link text-white-50 text-xs">For tesing purposes.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper bg-light pt-4 pb-5" style="min-height: 949.6px;">
+            <div class="container" style="max-width: 900px;">
+
+                <!-- Storyboard Slide 4 Mock-up: Grid of Buttons (Enrollment, Registrar, IT Helpdesk, Library) -->
+                <div class="card card-outline card-danger mb-4 shadow-sm">
+                    <div class="card-header bg-white">
+                        <h3 class="card-title font-weight-bold text-dark text-sm">
+                            <i class="fas fa-th-large text-danger mr-1"></i> Quick Access Button
+                        </h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3 mb-2">
+                                <a href="/?q=&amp;category=Student Affairs" class="quick-btn bg-white border rounded p-3 d-block text-decoration-none shadow-sm">
+                                    <i class="fas fa-user-graduate text-danger fa-2x mb-2"></i>
+                                    <span class="d-block font-weight-bold text-dark text-xs">Student Affairs</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-2">
+                                <a href="/?q=&amp;category=Registrar" class="quick-btn bg-white border rounded p-3 d-block text-decoration-none shadow-sm">
+                                    <i class="fas fa-file-alt text-danger fa-2x mb-2"></i>
+                                    <span class="d-block font-weight-bold text-dark text-xs">Registrar</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-2">
+                                <a href="/?q=&amp;category=IT+Services" class="quick-btn bg-white border rounded p-3 d-block text-decoration-none shadow-sm">
+                                    <i class="fas fa-laptop-code text-danger fa-2x mb-2"></i>
+                                    <span class="d-block font-weight-bold text-dark text-xs">IT Helpdesk</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-2">
+                                <a href="/?q=&amp;category=Library" class="quick-btn bg-white border rounded p-3 d-block text-decoration-none shadow-sm">
+                                    <i class="fas fa-book text-danger fa-2x mb-2"></i>
+                                    <span class="d-block font-weight-bold text-dark text-xs">Library</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search & Category Filter Card -->
+                <div class="card card-primary card-outline shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h3 class="card-title font-weight-bold text-dark text-sm">
+                            <i class="fas fa-search text-danger mr-1"></i> Search Campus Service Procedures
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="GET" action="/">
+                            <div class="input-group mb-3">
+                                <input type="text" name="q" value="" placeholder="Search transactions (e.g., ACE Form, Lost ID, Good Moral, IT Helpdesk, Faculty Hiring)..." autocomplete="off" class="form-control">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-danger btn-flat">
+                                        <i class="fas fa-search"></i> Search
+                                    </button>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Category Filter Buttons -->
+                            <div class="d-flex flex-wrap align-items-center">
+                                <span class="text-xs font-weight-bold text-muted mr-2 mb-1">Filter Category:</span>
+                                
+                                <button type="submit" name="category" value="All" class="btn btn-xs btn-danger btn-flat mr-1 mb-1">
+                                    All
+                                </button>
+                                
+                                <button type="submit" name="category" value="Registrar" class="btn btn-xs btn-outline-secondary btn-flat mr-1 mb-1">
+                                    Registrar
+                                </button>
+                                
+                                <button type="submit" name="category" value="Student Affairs" class="btn btn-xs btn-outline-secondary btn-flat mr-1 mb-1">
+                                    Student Affairs
+                                </button>
+                                
+                                <button type="submit" name="category" value="IT Services" class="btn btn-xs btn-outline-secondary btn-flat mr-1 mb-1">
+                                    IT Services
+                                </button>
+                                
+                                <button type="submit" name="category" value="Library" class="btn btn-xs btn-outline-secondary btn-flat mr-1 mb-1">
+                                    Library
+                                </button>
+                                
+                                <button type="submit" name="category" value="Faculty Recruitment" class="btn btn-xs btn-outline-secondary btn-flat mr-1 mb-1">
+                                    Faculty Recruitment
+                                </button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Services Accordion List -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white d-flex align-items-center justify-content-between py-3">
+                        <h3 class="card-title font-weight-bold text-danger text-sm mb-0">
+                            <i class="fas fa-list-alt mr-1"></i> Available Service Guides (14)
+                        </h3>
+                        <span class="text-muted text-xs">Click a service to view full steps</span>
+                    </div>
+                    <div class="card-body bg-light">
+                        
+                            <div class="accordion" id="serviceAccordion">
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingenrollment-adding">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseenrollment-adding" aria-expanded="true" aria-controls="collapseenrollment-adding">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Subject Adding &amp; Changing (ACE)
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseenrollment-adding" class="collapse" aria-labelledby="headingenrollment-adding" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A guide for adding or replacing subjects, changing class sections, and requesting eligible enrollment adjustments after initial registration.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Registrar's Office - Window 2 (confirm location)</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> 1–2 Working Days (unverified estimate)
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Printed current Certificate of Registration (COR)</li>
+                                                
+                                                <li>Accomplished ACE Form (2 copies, if required)</li>
+                                                
+                                                <li>Correct subject codes, titles, and preferred sections</li>
+                                                
+                                                <li>Academic Adviser's approval or signature</li>
+                                                
+                                                <li>Department Chairperson's approval or signature</li>
+                                                
+                                                <li>Additional supporting documents if requested by the Registrar</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Check the academic calendar and confirm that the adding/changing period is still open.</li>
+                                                
+                                                <li class="mb-1">Review your current COR and list the subjects or sections you want to add or change.</li>
+                                                
+                                                <li class="mb-1">Confirm subject availability, prerequisites, and possible schedule conflicts with your Academic Adviser.</li>
+                                                
+                                                <li class="mb-1">Get the current ACE Form from the Registrar's Office or an authorized campus source.</li>
+                                                
+                                                <li class="mb-1">Fill out the form legibly with your student details and exact subject codes and sections.</li>
+                                                
+                                                <li class="mb-1">Present the form to your Academic Adviser for review and obtain the required signature.</li>
+                                                
+                                                <li class="mb-1">Have the request checked and approved by the Department Chairperson or designated official.</li>
+                                                
+                                                <li class="mb-1">Submit the approved form and required attachments to the Registrar's Office; ask for proof of receipt.</li>
+                                                
+                                                <li class="mb-1">Wait for confirmation that the change has been encoded; do not assume submission means approval.</li>
+                                                
+                                                <li class="mb-1">Recheck and reprint your COR, verify the subjects, units, and schedule, and report any errors promptly.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/enrollment-adding" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingid-replacement">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseid-replacement" aria-expanded="true" aria-controls="collapseid-replacement">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Student Affairs</span> 
+                                                    Lost / Damaged Student ID Replacement
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseid-replacement" class="collapse" aria-labelledby="headingid-replacement" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> Instructions for requesting a replacement student ID when the original is lost, stolen, unreadable, or physically damaged.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Office of Student Services (OSS) - confirm the campus issuing desk</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> 3–5 Working Days (unverified estimate)
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Notarized Affidavit of Loss if required for a lost ID, or the damaged ID</li>
+                                                
+                                                <li>Current Certificate of Registration (COR)</li>
+                                                
+                                                <li>Student number and another acceptable proof of identity</li>
+                                                
+                                                <li>Accomplished ID replacement request form if required</li>
+                                                
+                                                <li>Official Receipt of ID replacement fee (₱150.00 in the group's draft; verify)</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Report the lost or damaged ID to the Office of Student Services and ask whether a temporary pass is available.</li>
+                                                
+                                                <li class="mb-1">Confirm the exact requirements for lost IDs versus damaged IDs before paying for documents.</li>
+                                                
+                                                <li class="mb-1">Prepare your COR, proof of identity, and an affidavit of loss if the campus requires it.</li>
+                                                
+                                                <li class="mb-1">Present the documents at the designated OSS or ID issuing desk for identity verification.</li>
+                                                
+                                                <li class="mb-1">Complete the replacement request form and check the spelling of your personal information.</li>
+                                                
+                                                <li class="mb-1">Obtain an official payment assessment or instructions from authorized staff.</li>
+                                                
+                                                <li class="mb-1">Pay the confirmed fee only through the authorized university payment channel and keep the receipt.</li>
+                                                
+                                                <li class="mb-1">Return to the issuing office, submit the receipt, and complete any required photo capture or verification.</li>
+                                                
+                                                <li class="mb-1">Record the reference number or scheduled release date provided by the office.</li>
+                                                
+                                                <li class="mb-1">Claim the replacement ID, inspect the details, and ask how to deactivate a lost card if applicable.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/id-replacement" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headinggood-moral">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsegood-moral" aria-expanded="true" aria-controls="collapsegood-moral">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Student Affairs</span> 
+                                                    Certificate of Good Moral Character
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsegood-moral" class="collapse" aria-labelledby="headinggood-moral" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A request guide for students and alumni who need a character certification for scholarships, internships, transfers, or employment.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Guidance &amp; Counseling Office (confirm issuing office)</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Same Day (2 Hours) - unverified estimate
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Valid Student ID or acceptable alumni identification</li>
+                                                
+                                                <li>Latest Certificate of Registration (COR) or proof of graduation, as applicable</li>
+                                                
+                                                <li>Student number and purpose of request</li>
+                                                
+                                                <li>Request form or logbook entry if required</li>
+                                                
+                                                <li>Cashier Official Receipt (₱50.00 in the group's draft; verify)</li>
+                                                
+                                                <li>Any additional clearance requested by the issuing office</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Ask the Guidance &amp; Counseling Office whether it issues the certificate for your student or alumni status.</li>
+                                                
+                                                <li class="mb-1">Prepare your ID, COR or graduation record, and the name of the organization requesting the certificate.</li>
+                                                
+                                                <li class="mb-1">Visit the authorized office during service hours and sign the request logbook if required.</li>
+                                                
+                                                <li class="mb-1">Complete the request form accurately, including your program and purpose of request.</li>
+                                                
+                                                <li class="mb-1">Have the requirements checked and obtain an official payment assessment if a fee applies.</li>
+                                                
+                                                <li class="mb-1">Pay at the authorized Cashier's Office and keep the official receipt.</li>
+                                                
+                                                <li class="mb-1">Return the assessed documents and receipt to the issuing office.</li>
+                                                
+                                                <li class="mb-1">Allow the office to verify your records and approve the request in accordance with its policy.</li>
+                                                
+                                                <li class="mb-1">Claim the signed certificate or follow the release instructions given by the office.</li>
+                                                
+                                                <li class="mb-1">Before leaving, check your full name, purpose, issue date, and authorized signatory.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/good-moral" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingfaculty-hiring-COS">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsefaculty-hiring-COS" aria-expanded="true" aria-controls="collapsefaculty-hiring-COS">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Faculty Recruitment</span> 
+                                                    Full-Time Faculty Application (Contract of Service)
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsefaculty-hiring-COS" class="collapse" aria-labelledby="headingfaculty-hiring-COS" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> Application guide for the full-time Contract of Service faculty recruitment listed in the group's draft for the second semester of AY 2026–2027, covering BSIT, BSA, BS Entrepreneurship, and BSCpE. Confirm the vacancy announcement and deadline before applying.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Office of the Head of Academic Programs - PUP Santa Maria Campus</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Not specified; subject to campus recruitment schedule
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Letter of Intent addressed to Dr. Arman DC. Santos, Campus Director</li>
+                                                
+                                                <li>Fully accomplished Personal Data Sheet (CS Form No. 212, Revised 2026)</li>
+                                                
+                                                <li>Authenticated Transcript of Records and Diploma, as specified in the announcement</li>
+                                                
+                                                <li>Authenticated Certificate of Eligibility or professional license, if applicable</li>
+                                                
+                                                <li>Certificate of Employment or Service Record</li>
+                                                
+                                                <li>Photocopies of relevant seminar and training certificates</li>
+                                                
+                                                <li>Any additional materials, copies, or format required by the recruitment announcement</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Locate the latest recruitment notice and confirm the open programs, qualifications, submission location, and deadline.</li>
+                                                
+                                                <li class="mb-1">Review the minimum educational and professional qualifications for the discipline you intend to teach.</li>
+                                                
+                                                <li class="mb-1">Download CS Form No. 212 (Revised 2026) and its completion guide from the Civil Service Commission website.</li>
+                                                
+                                                <li class="mb-1">Complete the Personal Data Sheet accurately and prepare related work-experience information if requested.</li>
+                                                
+                                                <li class="mb-1">Write a formal Letter of Intent addressed to Dr. Arman DC. Santos, identifying your intended teaching field.</li>
+                                                
+                                                <li class="mb-1">Collect your TOR, diploma, eligibility or license documents, employment records, and relevant training certificates.</li>
+                                                
+                                                <li class="mb-1">Arrange authentication or certification of your credentials only as required by the official announcement.</li>
+                                                
+                                                <li class="mb-1">Check the completeness, legibility, and requested number of copies of every document.</li>
+                                                
+                                                <li class="mb-1">Submit your application in person to the Head of Academic Programs, Dr. Katherin Joyce M. Castro, if the current notice directs applicants there.</li>
+                                                
+                                                <li class="mb-1">Use November 30, 2026 only as the deadline stated in the group's draft; verify it from the actual vacancy posting.</li>
+                                                
+                                                <li class="mb-1">Request acknowledgment of receipt and monitor the official channel for screening, interview, or demonstration-teaching instructions.</li>
+                                                
+                                                <li class="mb-1">Attend any scheduled evaluation and wait for a formal hiring decision before assuming an appointment.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/faculty-hiring-COS" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingcor-request">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsecor-request" aria-expanded="true" aria-controls="collapsecor-request">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Certificate of Registration (COR) Request / Reprint
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsecor-request" class="collapse" aria-labelledby="headingcor-request" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> How to view, download, reprint, or request an official copy of your current semester's Certificate of Registration.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Campus Registrar / Authorized Student Portal</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Depends on portal availability and certification request
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Student number and access to the authorized student portal</li>
+                                                
+                                                <li>Current enrollment details (academic year and semester)</li>
+                                                
+                                                <li>Valid Student ID if requesting an office-issued copy</li>
+                                                
+                                                <li>Document request form and receipt if the office requires certification or payment</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Confirm that your enrollment is finalized and your subject adjustments are already encoded.</li>
+                                                
+                                                <li class="mb-1">Sign in to the official student portal using your own account.</li>
+                                                
+                                                <li class="mb-1">Open the registration or enrollment records section and select the correct semester.</li>
+                                                
+                                                <li class="mb-1">Review your name, program, section, subjects, and academic units for accuracy.</li>
+                                                
+                                                <li class="mb-1">Use the portal's download or print function if a COR is available.</li>
+                                                
+                                                <li class="mb-1">If the COR is missing, incorrect, or must be officially certified, contact the Campus Registrar.</li>
+                                                
+                                                <li class="mb-1">Present the requested proof of identity and complete any additional request form.</li>
+                                                
+                                                <li class="mb-1">Follow the authorized payment and document release instructions, if applicable.</li>
+                                                
+                                                <li class="mb-1">Keep the correct, updated COR and avoid sharing copies containing private student details publicly.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/cor-request" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingsubject-dropping">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsesubject-dropping" aria-expanded="true" aria-controls="collapsesubject-dropping">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Official Subject Dropping / Withdrawal
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsesubject-dropping" class="collapse" aria-labelledby="headingsubject-dropping" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A procedure for formally dropping an enrolled subject within the permitted period rather than simply stopping attendance.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Academic Adviser / Department Office / Campus Registrar</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Depends on academic deadline and approval
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Current Certificate of Registration (COR)</li>
+                                                
+                                                <li>Student ID or student number</li>
+                                                
+                                                <li>Official dropping or enrollment adjustment form, if applicable</li>
+                                                
+                                                <li>Academic Adviser and department approval, when required</li>
+                                                
+                                                <li>Supporting explanation or documents, if requested</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Read the university's current academic calendar and verify the deadline for dropping or withdrawal.</li>
+                                                
+                                                <li class="mb-1">Identify the exact subject code, section, and instructor on your current COR.</li>
+                                                
+                                                <li class="mb-1">Consult your Academic Adviser about minimum units, prerequisites, and possible effects on scholarship eligibility.</li>
+                                                
+                                                <li class="mb-1">Ask the Registrar which dropping or ACE form applies to your situation.</li>
+                                                
+                                                <li class="mb-1">Complete the form and state the required reason for the request.</li>
+                                                
+                                                <li class="mb-1">Obtain all required signatures from your adviser, chairperson, or authorized personnel.</li>
+                                                
+                                                <li class="mb-1">Submit the form before the deadline and retain proof that it was received.</li>
+                                                
+                                                <li class="mb-1">Wait for the decision and check how the subject will appear on your official enrollment record.</li>
+                                                
+                                                <li class="mb-1">Get an updated COR or written confirmation and resolve discrepancies promptly.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/subject-dropping" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headinggrades-request">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsegrades-request" aria-expanded="true" aria-controls="collapsegrades-request">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Certificate of Grades / Academic Grades Request
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsegrades-request" class="collapse" aria-labelledby="headinggrades-request" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> Instructions for obtaining academic grades for scholarships, employment, transfers, or record-keeping.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Campus Registrar / PUP Online Document Request System (if available)</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies by academic record and document type
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Student number and valid identification</li>
+                                                
+                                                <li>Academic year and semester to be covered</li>
+                                                
+                                                <li>Completed document request, if required</li>
+                                                
+                                                <li>Relevant supporting documents or receipt shown by the office or request system</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Determine whether you need an online grade view, an official Certificate of Grades, or a certified copy.</li>
+                                                
+                                                <li class="mb-1">Check that all grades for the requested semester have already been submitted and posted.</li>
+                                                
+                                                <li class="mb-1">Ask the Campus Registrar whether your requested document is handled locally or through PUP ODRS.</li>
+                                                
+                                                <li class="mb-1">If directed to ODRS, sign in to https://odrs.pup.edu.ph/ and choose the appropriate available document type.</li>
+                                                
+                                                <li class="mb-1">Enter accurate student and academic-period information and upload required documents when prompted.</li>
+                                                
+                                                <li class="mb-1">Review the request summary and complete any authorized payment instructions if applicable.</li>
+                                                
+                                                <li class="mb-1">Save your reference or request number and monitor the official status notices.</li>
+                                                
+                                                <li class="mb-1">Claim or receive the document according to the office's instructions.</li>
+                                                
+                                                <li class="mb-1">Verify that the name, subject grades, semester, and authentication information are correct.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/grades-request" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingtor-request">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsetor-request" aria-expanded="true" aria-controls="collapsetor-request">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Transcript of Records (TOR) Request
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsetor-request" class="collapse" aria-labelledby="headingtor-request" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A guide to requesting an official transcript containing completed subjects, grades, and academic units.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Campus Registrar / PUP Online Document Request System (ODRS)</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies; check the request system or Registrar
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Student or graduate identification and student number</li>
+                                                
+                                                <li>Accurate program, attendance, and graduation information</li>
+                                                
+                                                <li>Completed online or campus document request</li>
+                                                
+                                                <li>Clearance or release documents, if required for the requested TOR</li>
+                                                
+                                                <li>Photo, request letter, payment voucher, or proof of payment if instructed</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Identify why you need the TOR and whether it is a first copy or a subsequent copy.</li>
+                                                
+                                                <li class="mb-1">Check the Campus Registrar's current TOR requirements, especially for graduates and transferring students.</li>
+                                                
+                                                <li class="mb-1">Visit https://odrs.pup.edu.ph/ if the campus instructs you to use PUP's Online Document Request System.</li>
+                                                
+                                                <li class="mb-1">Register or log in and select the correct campus or registrar when applicable.</li>
+                                                
+                                                <li class="mb-1">Choose the available TOR document option and complete the request details.</li>
+                                                
+                                                <li class="mb-1">Upload any required photo, clearance, or supporting document shown for your request.</li>
+                                                
+                                                <li class="mb-1">Review and submit the request, then follow the prescribed payment process if required.</li>
+                                                
+                                                <li class="mb-1">Monitor official updates and comply with requests for missing or corrected requirements.</li>
+                                                
+                                                <li class="mb-1">Follow the approved pickup or delivery arrangement and present the necessary claim documents.</li>
+                                                
+                                                <li class="mb-1">Inspect the released TOR for correct identifying details and complete academic records.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/tor-request" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingdocument-certification">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsedocument-certification" aria-expanded="true" aria-controls="collapsedocument-certification">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Certified True Copy / Document Authentication
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsedocument-certification" class="collapse" aria-labelledby="headingdocument-certification" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> Request official certification or authentication of eligible university-issued academic documents.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Campus Registrar / Designated Document Certification Desk</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies by document and verification requirements
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Original university-issued document for inspection, if required</li>
+                                                
+                                                <li>Photocopies of the document in the number requested by the office</li>
+                                                
+                                                <li>Valid student or government-issued ID</li>
+                                                
+                                                <li>Document request or certification form, if required</li>
+                                                
+                                                <li>Official receipt or payment voucher when applicable</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Ask the receiving organization whether it needs a certified true copy, authentication, or another form of verification.</li>
+                                                
+                                                <li class="mb-1">Confirm with the Campus Registrar that your document is eligible for that service.</li>
+                                                
+                                                <li class="mb-1">Prepare the original document and required photocopies, keeping them clean and readable.</li>
+                                                
+                                                <li class="mb-1">Complete any prescribed request form and specify the number of certified copies.</li>
+                                                
+                                                <li class="mb-1">Submit the documents for checking against university records.</li>
+                                                
+                                                <li class="mb-1">Pay only the officially assessed amount, if applicable, and retain the receipt.</li>
+                                                
+                                                <li class="mb-1">Obtain a claim date or request reference and monitor any additional instructions.</li>
+                                                
+                                                <li class="mb-1">Receive the certified document and check the seal, signature, and information.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/document-certification" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headinglibrary-clearance">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapselibrary-clearance" aria-expanded="true" aria-controls="collapselibrary-clearance">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Library</span> 
+                                                    Library Clearance Request
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapselibrary-clearance" class="collapse" aria-labelledby="headinglibrary-clearance" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A guide to securing library clearance for graduation, transfers, or other official requirements.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">PUP Santa Maria Campus Library</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies by account verification and outstanding obligations
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Valid Student ID and student number</li>
+                                                
+                                                <li>Clearance form or request reference, if required</li>
+                                                
+                                                <li>All outstanding borrowed books or library materials</li>
+                                                
+                                                <li>Proof of settlement of any applicable obligations</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Check whether your requested academic transaction requires library clearance.</li>
+                                                
+                                                <li class="mb-1">Review your library borrowing account and identify any unreturned materials.</li>
+                                                
+                                                <li class="mb-1">Return all outstanding borrowed books and materials to the designated circulation staff.</li>
+                                                
+                                                <li class="mb-1">Ask library personnel whether a physical form or electronic clearance is used.</li>
+                                                
+                                                <li class="mb-1">Present your student ID and submit the appropriate clearance request.</li>
+                                                
+                                                <li class="mb-1">Allow staff to verify borrowing history and any remaining obligations.</li>
+                                                
+                                                <li class="mb-1">Resolve outstanding issues through the official library procedure.</li>
+                                                
+                                                <li class="mb-1">Request the authorized signature, clearance status update, or proof of clearance.</li>
+                                                
+                                                <li class="mb-1">Save the clearance result for your graduation or document-processing requirements.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/library-clearance" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingstudent-portal-recovery">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsestudent-portal-recovery" aria-expanded="true" aria-controls="collapsestudent-portal-recovery">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">IT Services</span> 
+                                                    Student Portal Login / Account Recovery
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsestudent-portal-recovery" class="collapse" aria-labelledby="headingstudent-portal-recovery" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> Troubleshooting and account recovery steps for students unable to access university student systems.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Campus ICT Support / Official PUP Student Support Channel</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies by cause and identity verification
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Student number and registered email address</li>
+                                                
+                                                <li>Valid Student ID for account ownership verification, if requested</li>
+                                                
+                                                <li>Exact error message or screenshot with sensitive details hidden</li>
+                                                
+                                                <li>A reachable recovery email or communication channel</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Confirm that you are visiting the official university portal rather than an unfamiliar link.</li>
+                                                
+                                                <li class="mb-1">Check your internet connection, browser, and correctly typed student number or username.</li>
+                                                
+                                                <li class="mb-1">Use the portal's official forgot-password or account recovery feature if available.</li>
+                                                
+                                                <li class="mb-1">Check your registered email for a legitimate verification or password reset message.</li>
+                                                
+                                                <li class="mb-1">If unsuccessful, contact Campus ICT Support or PUP's official student support channel.</li>
+                                                
+                                                <li class="mb-1">Describe the problem and provide non-secret account details needed to locate your record.</li>
+                                                
+                                                <li class="mb-1">Complete the office's identity verification before an account is changed.</li>
+                                                
+                                                <li class="mb-1">Follow authorized recovery steps and sign in with the updated credentials.</li>
+                                                
+                                                <li class="mb-1">Set a strong, unique password and never disclose passwords or one-time codes to support staff.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/student-portal-recovery" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingscholarship-inquiry">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsescholarship-inquiry" aria-expanded="true" aria-controls="collapsescholarship-inquiry">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Student Affairs</span> 
+                                                    Scholarship Application and Renewal Inquiry
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsescholarship-inquiry" class="collapse" aria-labelledby="headingscholarship-inquiry" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A preparation guide for checking scholarship eligibility, submitting an application, or renewing an existing award.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">Office of Student Services / Designated Scholarship Coordinator</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Depends on scholarship announcement and selection period
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Current Certificate of Registration or proof of enrollment</li>
+                                                
+                                                <li>Valid Student ID and contact details</li>
+                                                
+                                                <li>Grade record or academic evaluation, if listed in the scholarship notice</li>
+                                                
+                                                <li>Application or renewal form provided by the scholarship program</li>
+                                                
+                                                <li>Income, residency, or other eligibility documents only if officially required</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Check the official university or scholarship-provider announcement for open applications.</li>
+                                                
+                                                <li class="mb-1">Read the eligibility rules, covered programs, grade requirements, and deadlines carefully.</li>
+                                                
+                                                <li class="mb-1">Ask the designated Scholarship Coordinator whether new applications or renewals are currently accepted.</li>
+                                                
+                                                <li class="mb-1">Prepare your enrollment record and the exact supporting documents listed in the announcement.</li>
+                                                
+                                                <li class="mb-1">Fill out the current application or renewal form using complete and truthful information.</li>
+                                                
+                                                <li class="mb-1">Submit through the authorized portal, email, or office stated in the notice.</li>
+                                                
+                                                <li class="mb-1">Keep a copy of your submission confirmation and monitor your official contact channel.</li>
+                                                
+                                                <li class="mb-1">Provide missing information or attend a required screening only when instructed.</li>
+                                                
+                                                <li class="mb-1">Check the official result and follow the acceptance or renewal requirements.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/scholarship-inquiry" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingstudent-record-correction">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsestudent-record-correction" aria-expanded="true" aria-controls="collapsestudent-record-correction">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Correction of Student Personal Records
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsestudent-record-correction" class="collapse" aria-labelledby="headingstudent-record-correction" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> How to request corrections to your name, birth date, or other recorded personal details in university systems.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">PUP Santa Maria Campus Registrar</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Depends on requested correction and supporting documents
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Valid PUP Student ID and student number</li>
+                                                
+                                                <li>Current COR or university record showing the incorrect detail</li>
+                                                
+                                                <li>Proof of correct information, such as an accepted civil registry record</li>
+                                                
+                                                <li>Completed correction request form, if required</li>
+                                                
+                                                <li>Other supporting records specified by the Registrar</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Locate the exact error in your student portal or printed university document.</li>
+                                                
+                                                <li class="mb-1">Prepare a clear description of the incorrect entry and the correct information.</li>
+                                                
+                                                <li class="mb-1">Contact the Campus Registrar to learn the requirements for that specific kind of correction.</li>
+                                                
+                                                <li class="mb-1">Collect official supporting documents proving the correct detail.</li>
+                                                
+                                                <li class="mb-1">Complete the prescribed request form and attach clear copies of the evidence.</li>
+                                                
+                                                <li class="mb-1">Submit the request for validation and obtain a reference or acknowledgement.</li>
+                                                
+                                                <li class="mb-1">Provide any additional evidence requested during verification.</li>
+                                                
+                                                <li class="mb-1">After approval, check that your student portal and future records show the correction.</li>
+                                                
+                                                <li class="mb-1">Request replacement copies of affected documents if necessary.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/student-record-correction" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-2 border shadow-none">
+                                    <div class="card-header p-2 bg-white" id="headingtransfer-credentials">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left text-dark font-weight-bold d-flex justify-content-between align-items-center text-xs p-1 text-decoration-none" type="button" data-toggle="collapse" data-target="#collapsetransfer-credentials" aria-expanded="true" aria-controls="collapsetransfer-credentials">
+                                                <span>
+                                                    <span class="badge badge-danger mr-1">Registrar</span> 
+                                                    Transfer Credentials / Honorable Dismissal
+                                                </span>
+                                                <i class="fas fa-chevron-down text-muted text-xs"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsetransfer-credentials" class="collapse" aria-labelledby="headingtransfer-credentials" data-parent="#serviceAccordion">
+                                        <div class="card-body bg-white text-xs border-top">
+                                            <p class="text-muted mb-2"><strong>Summary:</strong> A guide for students requesting official transfer credentials when applying to continue studies at another institution.</p>
+                                            
+                                            <div class="row bg-light p-2 rounded mb-3">
+                                                <div class="col-6">
+                                                    <strong>Office:</strong> <span class="text-danger">PUP Santa Maria Campus Registrar</span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <strong>Processing Time / Deadline:</strong> Varies by clearance and document processing
+                                                </div>
+                                            </div>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-file-alt text-danger"></i> Requirements:</p>
+                                            <ul class="pl-3 mb-3 text-muted">
+                                                
+                                                <li>Valid student identification and student number</li>
+                                                
+                                                <li>Completed transfer credential request, if required</li>
+                                                
+                                                <li>Current COR or academic record</li>
+                                                
+                                                <li>General or departmental clearance, if required</li>
+                                                
+                                                <li>Receiving school's instructions or request letter, if applicable</li>
+                                                
+                                                <li>Official payment documents, if applicable</li>
+                                                
+                                            </ul>
+
+                                            <p class="font-weight-bold mb-1 text-dark"><i class="fas fa-shoe-prints text-danger"></i> Step-by-Step Procedure:</p>
+                                            <ol class="pl-3 mb-3 text-muted">
+                                                
+                                                <li class="mb-1">Confirm the receiving school's required transfer documents before beginning your request.</li>
+                                                
+                                                <li class="mb-1">Consult the Campus Registrar about consequences of issuing transfer credentials for your PUP enrollment status.</li>
+                                                
+                                                <li class="mb-1">Ask whether your campus accepts the request in person, through ODRS, or both.</li>
+                                                
+                                                <li class="mb-1">Complete the prescribed form and identify the receiving institution if requested.</li>
+                                                
+                                                <li class="mb-1">Secure required departmental, library, and financial clearances if applicable.</li>
+                                                
+                                                <li class="mb-1">Submit the requirements and complete any official payment process.</li>
+                                                
+                                                <li class="mb-1">Keep your acknowledgement or reference number and monitor the processing status.</li>
+                                                
+                                                <li class="mb-1">Collect the credentials following the authorized release policy.</li>
+                                                
+                                                <li class="mb-1">Inspect the documents and submit them to your receiving school as instructed.</li>
+                                                
+                                            </ol>
+
+                                            <div class="text-right pt-2 border-top">
+                                                <a href="/download/transfer-credentials" class="btn btn-xs btn-danger btn-flat">
+                                                    <i class="fas fa-file-pdf"></i> Download Official Guide (.pdf)
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Footer Disclaimer -->
+                <div class="row mt-4 pt-3 border-top text-center text-xs text-muted">
+                    <div class="col-12 mb-1">
+                        <a href="https://www.pup.edu.ph" target="_blank" class="text-danger font-weight-bold">PUP Official Website</a> • 
+                        <a href="https://www.pup.edu.ph/terms" target="_blank" class="text-danger font-weight-bold">Terms of Use</a>
+                    </div>
+                    <div class="col-12" style="font-size: 11px;">
+                        © Polytechnic University of the Philippines Santa Maria Campus •
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Required AdminLTE & Bootstrap JS scripts -->
+    <script src="https://sis1.pup.edu.ph/student/assets/admin/plugins/jquery/jquery-3.7.0.min.js"></script>
+    <script src="https://sis1.pup.edu.ph/student/assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://sis1.pup.edu.ph/student/assets/admin/dist/js/adminlte.min.js"></script>
+    <script src="https://sis1.pup.edu.ph/student/assets/admin/plugins/js/si.js"></script>
+    <script src="https://cdn.pup.edu.ph/js/si.js"></script>
+
+
+</body></html>
