@@ -2,7 +2,7 @@
 
 A Flask web application deployed and managed as a 24/7.
 
-<img src="{{ url_for('static', filename='qrcode.png') }}" alt="QR Code" width="200">
+![QR Code](qrcode.png)
 
 <p align="center">
   <strong>Live Deployment:</strong> <a href="http://85.211.241.159:8001">http://85.211.241.159:8001</a>
